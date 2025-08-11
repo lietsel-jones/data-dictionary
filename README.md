@@ -16,6 +16,7 @@ import pandas as pd
 url = "https://raw.githubusercontent.com/lietsel-jones/data-dictionary/main/docs/latest_data_dictionary.csv"
 df = pd.read_csv(url)
 print(df.head())
+```
 
 ## Latest Version
 **Curent version:** {{VERSION}}
