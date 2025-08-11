@@ -19,7 +19,7 @@ print(df.head())
 ```
 
 ## Latest Version
-**Curent version:** {{VERSION}}
+**Curent version:** v2025.08.11-2202
 
 ## Versioning
 * Each update is tagged with a version number based on the date/time of the update.
