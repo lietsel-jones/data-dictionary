@@ -10,11 +10,7 @@ You can use this link in your code to get the most recent version of the data di
 https://raw.githubusercontent.com/lietsel-jones/data-dictionary/main/docs/latest_data_dictionary.csv
 
 For example, in Python:
-import pandas as pd
-
-url = "https://raw.githubusercontent.com/lietsel-jones/data-dictionary/main/docs/latest_data_dictionary.csv"
-df = pd.read_csv(url)
-df.head()
+<pre> ```python import pandas as pd url = "https://raw.githubusercontent.com/lietsel-jones/data-dictionary/main/docs/latest_data_dictionary.csv" df = pd.read_csv(url) print(df.head()) ``` </pre>
 
 ## Latest Version
 **Curent version:** {{VERSION}}
