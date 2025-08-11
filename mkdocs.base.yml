@@ -9,5 +9,4 @@ theme:
     - toc.integrate
 markdown_extensions:
   - tables
-  - toc:
-    permalink: true
+  - toc
