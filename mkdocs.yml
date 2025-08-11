@@ -1,0 +1,87 @@
+site_name: Data Dictionary
+theme:
+  name: material
+  features:
+  - search.suggest
+  - search.highlight
+  - navigation.expand
+  - navigation.sections
+  - toc.integrate
+markdown_extensions:
+- tables
+- toc
+nav:
+- Home: index.md
+- Modalities:
+  - PDQ-8: modalities/PDQ-8.md
+  - SAA Postivity: modalities/SAA Postivity.md
+  - MDS-UPDRS Part III: modalities/MDS-UPDRS Part III.md
+  - MDS-UPDRS Part IV: modalities/MDS-UPDRS Part IV.md
+  - SDM: modalities/SDM.md
+  - CBD-Armstrong: modalities/CBD-Armstrong.md
+  - 'RBD Single-Question Screen ': modalities/RBD Single-Question Screen .md
+  - PD RFQ-U: modalities/PD RFQ-U.md
+  - CBFS A: modalities/CBFS A.md
+  - Base: modalities/Base.md
+  - Demographics: modalities/Demographics.md
+  - Family history: modalities/Family history.md
+  - Known_relatedness: modalities/Known_relatedness.md
+  - Diagnosis: modalities/Diagnosis.md
+  - MDS_Diagnostic_criteria: modalities/MDS_Diagnostic_criteria.md
+  - PD History: modalities/PD History.md
+  - Medical History: modalities/Medical History.md
+  - Clinical diagnosis of complications: modalities/Clinical diagnosis of complications.md
+  - Current Medication Status: modalities/Current Medication Status.md
+  - Lifestyle: modalities/Lifestyle.md
+  - CISI-PD: modalities/CISI-PD.md
+  - Hoehn and Yahr: modalities/Hoehn and Yahr.md
+  - Rankin Scale: modalities/Rankin Scale.md
+  - UPDRS Part I: modalities/UPDRS Part I.md
+  - UPDRS Part II: modalities/UPDRS Part II.md
+  - UPDRS Part III: modalities/UPDRS Part III.md
+  - UPDRS Part IV: modalities/UPDRS Part IV.md
+  - MoCA: modalities/MoCA.md
+  - MMSE: modalities/MMSE.md
+  - SCOPA-COG: modalities/SCOPA-COG.md
+  - SCOPA-AUT: modalities/SCOPA-AUT.md
+  - RBD Screening Questionnaire: modalities/RBD Screening Questionnaire.md
+  - Epworth Sleepiness Scale: modalities/Epworth Sleepiness Scale.md
+  - Orthostatic hypotension: modalities/Orthostatic hypotension.md
+  - Olfactory test: modalities/Olfactory test.md
+  - Misc Depression Scale: modalities/Misc Depression Scale.md
+  - PDQ-39: modalities/PDQ-39.md
+  - WBC counts: modalities/WBC counts.md
+  - King's PD pain scale: modalities/King's PD pain scale.md
+  - Modified MERQ-PD: modalities/Modified MERQ-PD.md
+  - MERQ-PD-B: modalities/MERQ-PD-B.md
+  - DAT_imaging: modalities/DAT_imaging.md
+  - MIBG_imaging: modalities/MIBG_imaging.md
+  - Pathology: modalities/Pathology.md
+  - SAA Positivity: modalities/SAA Positivity.md
+  - Availability: modalities/Availability.md
+  - MDS-MSA: modalities/MDS-MSA.md
+  - MDS-PSP: modalities/MDS-PSP.md
+  - CBS-Armstrong: modalities/CBS-Armstrong.md
+  - DLB: modalities/DLB.md
+  - UMSARS part I: modalities/UMSARS part I.md
+  - UMSARS part II: modalities/UMSARS part II.md
+  - UMSARS part III: modalities/UMSARS part III.md
+  - UMSARS part IV: modalities/UMSARS part IV.md
+  - CBFS B: modalities/CBFS B.md
+  - PSP-CDS: modalities/PSP-CDS.md
+  - PSP-RS part I: modalities/PSP-RS part I.md
+  - PSP-RS part II: modalities/PSP-RS part II.md
+  - PSP-RS part III: modalities/PSP-RS part III.md
+  - PSP-RS part IV: modalities/PSP-RS part IV.md
+  - PSP-RS part VI: modalities/PSP-RS part VI.md
+  - PSP-RS: modalities/PSP-RS.md
+  - IDEA Screening Questionnaire: modalities/IDEA Screening Questionnaire.md
+  - PSP-RS part V: modalities/PSP-RS part V.md
+  - MDS-UPDRS Part II: modalities/MDS-UPDRS Part II.md
+  - Vital: modalities/Vital.md
+  - 'UMSARS part I ': modalities/UMSARS part I .md
+  - MDS-UPDRS Part I: modalities/MDS-UPDRS Part I.md
+  - RBD Diagnosis: modalities/RBD Diagnosis.md
+  - Schwab England ADL: modalities/Schwab England ADL.md
+  - 'Geriatric Depression Scale: Short Form': 'modalities/Geriatric Depression Scale:
+      Short Form.md'

@@ -1,0 +1,22 @@
+# MDS-UPDRS Part I
+
+| Modality         | Item                                                  | Description                                                              | ItemType   | Required   | Values              |   Unnamed: 13 |
+|:-----------------|:------------------------------------------------------|:-------------------------------------------------------------------------|:-----------|:-----------|:--------------------|--------------:|
+| MDS-UPDRS Part I | mds_updrs_part_i_primary_info_source                  | MDS-UPDRS Part I Questions 1-6 Primary Source Of Information             | string     | nullable   | nan                 |           nan |
+| MDS-UPDRS Part I | code_upd2101_cognitive_impairment                     | 1.01 MDS-UPDRS - Cognitive Impairment (UPD2101)                          | integer    | nullable   | y.isin([0,1,2,3,4]) |           nan |
+| MDS-UPDRS Part I | code_upd2102_hallucinations_and_psychosis             | 1.02 MDS-UPDRS - Hallucinations and Psychosis (UPD2102)                  | integer    | nullable   | y.isin([0,1,2,3,4]) |           nan |
+| MDS-UPDRS Part I | code_upd2103_depressed_mood                           | 1.03 MDS-UPDRS - Depressed Mood (UPD2103)                                | integer    | nullable   | y.isin([0,1,2,3,4]) |           nan |
+| MDS-UPDRS Part I | code_upd2104_anxious_mood                             | 1.04 MDS-UPDRS - Anxious Mood (UPD2104)                                  | integer    | nullable   | y.isin([0,1,2,3,4]) |           nan |
+| MDS-UPDRS Part I | code_upd2105_apathy                                   | 1.05 MDS-UPDRS - Apathy (UPD2105)                                        | integer    | nullable   | y.isin([0,1,2,3,4]) |           nan |
+| MDS-UPDRS Part I | code_upd2106_dopamine_dysregulation_syndrome_features | 1.06 MDS-UPDRS - Features of Dopamine Dysregulation Syndrome (UPD2106)   | integer    | nullable   | y.isin([0,1,2,3,4]) |           nan |
+| MDS-UPDRS Part I | mds_updrs_part_i_sub_score                            | MDS-UPDRS Part I Questions 1-6 Summary Sub-Score                         | integer    | nullable   | (y>=0) & (y<=24)    |           nan |
+| MDS-UPDRS Part I | mds_updrs_part_i_pat_quest_primary_info_source        | MDS-UPDRS Part I Patient Questionnaire Primary Source Of Information     | string     | nullable   | nan                 |           nan |
+| MDS-UPDRS Part I | code_upd2107_pat_quest_sleep_problems                 | 1.07 MDS-UPDRS - Sleep Problems (UPD2107)                                | integer    | nullable   | y.isin([0,1,2,3,4]) |           nan |
+| MDS-UPDRS Part I | code_upd2108_pat_quest_daytime_sleepiness             | 1.08 MDS-UPDRS - Daytime Sleepiness (UPD2108)                            | integer    | nullable   | y.isin([0,1,2,3,4]) |           nan |
+| MDS-UPDRS Part I | code_upd2109_pat_quest_pain_and_other_sensations      | 1.09 MDS-UPDRS - Pain And Other Sensations (UPD2109)                     | integer    | nullable   | y.isin([0,1,2,3,4]) |           nan |
+| MDS-UPDRS Part I | code_upd2110_pat_quest_urinary_problems               | 1.10 MDS-UPDRS - Urinary Problems (UPD2110)                              | integer    | nullable   | y.isin([0,1,2,3,4]) |           nan |
+| MDS-UPDRS Part I | code_upd2111_pat_quest_constipation_problems          | 1.11 MDS-UPDRS - Constipation Problems (UPD2111)                         | integer    | nullable   | y.isin([0,1,2,3,4]) |           nan |
+| MDS-UPDRS Part I | code_upd2112_pat_quest_lightheadedness_on_standing    | 1.12 MDS-UPDRS - Lightheadedness on Standing (UPD2112)                   | integer    | nullable   | y.isin([0,1,2,3,4]) |           nan |
+| MDS-UPDRS Part I | code_upd2113_pat_quest_fatigue                        | 1.13 MDS-UPDRS - Fatigue (UPD2113)                                       | integer    | nullable   | y.isin([0,1,2,3,4]) |           nan |
+| MDS-UPDRS Part I | mds_updrs_part_i_pat_quest_sub_score                  | MDS-UPDRS Part I Patient Questionnaire Questions 7-13 Summary  Sub-Score | integer    | nullable   | (y>=0) & (y<=28)    |           nan |
+| MDS-UPDRS Part I | mds_updrs_part_i_summary_score                        | MDS-UPDRS Part I Summary Score                                           | integer    | nullable   | (y>=0) & (y<=52)    |           nan |

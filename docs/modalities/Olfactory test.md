@@ -1,0 +1,13 @@
+# Olfactory test
+
+| Modality       | Item                      | Description                                                                                                            | ItemType   | Required   | Values                               |   Unnamed: 13 |
+|:---------------|:--------------------------|:-----------------------------------------------------------------------------------------------------------------------|:-----------|:-----------|:-------------------------------------|--------------:|
+| Olfactory test | smell_test_results        | Anosmia, hyposmia, norsomnia based on the age and sex standardized cut-off                                             | string     | nullable   | ["Anosmia", "Hyposmia", "Normosmia"] |           nan |
+| Olfactory test | smell_test_name           | Name of the used smell test (e.g. sniffin-stick, bsit, upsit)                                                          | string     | nullable   | nan                                  |           nan |
+| Olfactory test | smell_test_version        | Version of the smell test used (Free text - British, German, abbreviated etc.)                                         | string     | nullable   | nan                                  |           nan |
+| Olfactory test | smell_test_num_smells     | Total number of smells assessed in the test                                                                            | integer    | nullable   | nan                                  |           nan |
+| Olfactory test | smell_test_num_correct    | Total number of smells correctly identified by participant                                                             | integer    | nullable   | nan                                  |           nan |
+| Olfactory test | smell_test_score          | Score of the smell test (the score used for hyposmia assignment); this may be the same as the number of smells correct | numeric    | nullable   | (y>=0) & (y<=9999)                   |           nan |
+| Olfactory test | smell_test_score_best     | Best score possible                                                                                                    | numeric    | nullable   | (y>=0) & (y<=9999)                   |           nan |
+| Olfactory test | smell_test_threshold_type | Indiate the type of hyposmia cut-off/threshold used by site/ test:  score, centile, quantile                           | string     | nullable   | nan                                  |           nan |
+| Olfactory test | smell_test_threshold      | Numeric hyposmia cut-off/threshold used by site/ test                                                                  | numeric    | nullable   | (y>=0) & (y<=9999)                   |           nan |

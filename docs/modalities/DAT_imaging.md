@@ -1,0 +1,14 @@
+# DAT_imaging
+
+| Modality    | Item                        | Description                                                                                                         | ItemType   | Required   | Values        |   Unnamed: 13 |
+|:------------|:----------------------------|:--------------------------------------------------------------------------------------------------------------------|:-----------|:-----------|:--------------|--------------:|
+| DAT_imaging | dat_low_dopamine_reuptake   | DAT dopamine re-uptake negative. DAT dopamine transporter binding normal = SWEDD = 1. DAT binding abnormal = PD = 0 | numeric    | nullable   | y.isin([0,1]) |           nan |
+| DAT_imaging | dat_sbr_caudate_right       | SBR for right caudate                                                                                               | numeric    | nullable   | (y>0)&(y<10)  |           nan |
+| DAT_imaging | dat_sbr_caudate_left        | SBR for left caudate                                                                                                | numeric    | nullable   | (y>0)&(y<10)  |           nan |
+| DAT_imaging | dat_sbr_caudate_mean        | SBR mean for caudate                                                                                                | numeric    | nullable   | (y>0)&(y<10)  |           nan |
+| DAT_imaging | dat_sbr_putamen_right       | SBR for right putamen                                                                                               | numeric    | nullable   | (y>0)&(y<10)  |           nan |
+| DAT_imaging | dat_sbr_putamen_left        | SBR for left putamen                                                                                                | numeric    | nullable   | (y>0)&(y<10)  |           nan |
+| DAT_imaging | dat_sbr_putamen_mean        | SBR mean for putamen                                                                                                | numeric    | nullable   | (y>0)&(y<10)  |           nan |
+| DAT_imaging | dat_sbr_striatum_mean_right | Mean SBR for right caudate and putamen                                                                              | numeric    | nullable   | (y>0)&(y<10)  |           nan |
+| DAT_imaging | dat_sbr_striatum_mean_left  | Mean SBR for left caudate and putamen                                                                               | numeric    | nullable   | (y>0)&(y<10)  |           nan |
+| DAT_imaging | dat_sbr_striatum_mean       | Mean SBR                                                                                                            | numeric    | nullable   | (y>0)&(y<10)  |           nan |

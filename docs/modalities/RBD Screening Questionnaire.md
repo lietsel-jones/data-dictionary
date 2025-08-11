@@ -1,0 +1,29 @@
+# RBD Screening Questionnaire
+
+| Modality                    | Item                                          | Description                                                            | ItemType   | Required   | Values           |   Unnamed: 13 |
+|:----------------------------|:----------------------------------------------|:-----------------------------------------------------------------------|:-----------|:-----------|:-----------------|--------------:|
+| RBD Screening Questionnaire | rbd_info_source                               | RBD Source Of Information                                              | string     | nullable   | nan              |           nan |
+| RBD Screening Questionnaire | code_rbd01_vivid_dreams                       | RBD 01. Vivid Dreams {1:yes, 0:no, null:unknown}                       | integer    | nullable   | y.isin([0,1])    |           nan |
+| RBD Screening Questionnaire | code_rbd02_aggressive_or_action_packed_dreams | RBD 02. Aggressive Or Action-Packed Dreams {1:yes, 0:no, null:unknown} | integer    | nullable   | y.isin([0,1])    |           nan |
+| RBD Screening Questionnaire | code_rbd03_nocturnal_behaviour                | RBD 03. Nocturnal Behaviour {1:yes, 0:no, null:unknown}                | integer    | nullable   | y.isin([0,1])    |           nan |
+| RBD Screening Questionnaire | code_rbd04_move_arms_legs_during_sleep        | RBD 04. Move Arms and Legs During Sleep {1:yes, 0:no, null:unknown}    | integer    | nullable   | y.isin([0,1])    |           nan |
+| RBD Screening Questionnaire | code_rbd05_hurt_bed_partner                   | RBD 05. Hurt Bed Partner {1:yes, 0:no, null:unknown}                   | integer    | nullable   | y.isin([0,1])    |           nan |
+| RBD Screening Questionnaire | code_rbd06_1_speaking_in_sleep                | RBD 06.1 Speaking In Sleep {1:yes, 0:no, null:unknown}                 | integer    | nullable   | y.isin([0,1])    |           nan |
+| RBD Screening Questionnaire | code_rbd06_2_sudden_limb_movements            | RBD 06.2 Sudden Limb Movements {1:yes, 0:no, null:unknown}             | integer    | nullable   | y.isin([0,1])    |           nan |
+| RBD Screening Questionnaire | code_rbd06_3_complex_movements                | RBD 06.3 Complex Movements {1:yes, 0:no, null:unknown}                 | integer    | nullable   | y.isin([0,1])    |           nan |
+| RBD Screening Questionnaire | code_rbd06_4_things_fell_down                 | RBD 06.4 Things Fell Down {1:yes, 0:no, null:unknown}                  | integer    | nullable   | y.isin([0,1])    |           nan |
+| RBD Screening Questionnaire | code_rbd07_my_movements_awake_me              | RBD 07. My Movements Awake Me {1:yes, 0:no, null:unknown}              | integer    | nullable   | y.isin([0,1])    |           nan |
+| RBD Screening Questionnaire | code_rbd08_remember_dreams                    | RBD 08. Remember Dreams {1:yes, 0:no, null:unknown}                    | integer    | nullable   | y.isin([0,1])    |           nan |
+| RBD Screening Questionnaire | code_rbd09_sleep_is_disturbed                 | RBD 09. Sleep Is Disturbed {1:yes, 0:no, null:unknown}                 | integer    | nullable   | y.isin([0,1])    |           nan |
+| RBD Screening Questionnaire | code_rbd10a_stroke                            | RBD 10a Stroke {1:yes, 0:no, null:unknown}                             | integer    | nullable   | y.isin([0,1])    |           nan |
+| RBD Screening Questionnaire | code_rbd10b_head_trauma                       | RBD 10b Head Trauma {1:yes, 0:no, null:unknown}                        | integer    | nullable   | y.isin([0,1])    |           nan |
+| RBD Screening Questionnaire | code_rbd10c_parkinsonism                      | RBD 10c Parkinsonism {1:yes, 0:no, null:unknown}                       | integer    | nullable   | y.isin([0,1])    |           nan |
+| RBD Screening Questionnaire | code_rbd10d_rls                               | RBD 10d RLS {1:yes, 0:no, null:unknown}                                | integer    | nullable   | y.isin([0,1])    |           nan |
+| RBD Screening Questionnaire | code_rbd10e_narcolepsy                        | RBD 10e Narcolepsy {1:yes, 0:no, null:unknown}                         | integer    | nullable   | y.isin([0,1])    |           nan |
+| RBD Screening Questionnaire | code_rbd10f_depression                        | RBD 10f Depression {1:yes, 0:no, null:unknown}                         | integer    | nullable   | y.isin([0,1])    |           nan |
+| RBD Screening Questionnaire | code_rbd10g_epilepsy                          | RBD 10g Epilepsy {1:yes, 0:no, null:unknown}                           | integer    | nullable   | y.isin([0,1])    |           nan |
+| RBD Screening Questionnaire | code_rbd10h_brain_inflammatory_disease        | RBD 10h Inflammatory Disease Of The Brain {1:yes, 0:no, null:unknown}  | integer    | nullable   | y.isin([0,1])    |           nan |
+| RBD Screening Questionnaire | code_rbd10i_other                             | RBD 10i Other {1:yes, 0:no, null:unknown}                              | integer    | nullable   | y.isin([0,1])    |           nan |
+| RBD Screening Questionnaire | code_rbd10i_other_comment                     | RBD 10i Other (comment)                                                | string     | nullable   | nan              |           nan |
+| RBD Screening Questionnaire | code_rbd10_nervous_system_disease             | RBD 10. Nervous system Disease {1:yes, 0:no, null:unknown}             | integer    | nullable   | y.isin([0,1])    |           nan |
+| RBD Screening Questionnaire | rbd_summary_score                             | RBD Summary Score                                                      | integer    | nullable   | (y>=0) & (y<=13) |           nan |

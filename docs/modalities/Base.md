@@ -1,0 +1,10 @@
+# Base
+
+| Modality   | Item               | Description                                                                                                                                                 | ItemType   | Required   | Values                     |   Unnamed: 13 |
+|:-----------|:-------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------|:-----------|:---------------------------|--------------:|
+| Base       | participant_id     | Participant's ID                                                                                                                                            | string     | required   | nan                        |           nan |
+| Base       | visit_name         | Visit name: screening, baseline, V01, V02 etc. baseline is when the participants were enrolled                                                              | string     | nullable   | nan                        |           nan |
+| Base       | visit_month        | Month from baseline visit (longitudinal study. Negative value is possible for screening visits), rounded integer                                            | integer    | required   | (y>=-1200) & (y<=1200)     |           nan |
+| Base       | date_visit_unix    | Date of visit in UNIX DATE (days from 1970-01-01). If not provided days or months, we regard this as the middle of the month (15) or the year (July 2nd)    | numeric    | nullable   | (y>= -25932 ) & (y<=51535) |           nan |
+| Base       | date_baseline_unix | Date of baseline in UNIX DATE (days from 1970-01-01). If not provided days or months, we regard this as the middle of the month (15) or the year (July 2nd) | numeric    | nullable   | (y>= -25932 ) & (y<=51535) |           nan |
+| Base       | age_at_baseline    | Age at baseline visit                                                                                                                                       | numeric    | nullable   | (y>=0) & (y<=125)          |           nan |
