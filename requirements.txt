@@ -1,0 +1,6 @@
+pandas
+pyyaml
+requests
+tabulate
+mkdocs
+mkdocs-material
