@@ -1,0 +1,31 @@
+name: Update & Deploy Data Dictionary
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # runs daily at 6 AM UTC
+  workflow_dispatch:       # allows manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run update script
+        env:
+          USE_LOCAL: 'true'
+          CSV_URL: ${{ secrets.CSV_URL }}  # add Google Sheet csv url as a repo secret
+        run: python update_data_dictionary.py
+
+      - name: Deploy MkDocs site
+        run: mkdocs gh-deploy --force
