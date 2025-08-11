@@ -32,3 +32,11 @@ jobs:
 
       - name: Deploy MkDocs site
         run: mkdocs gh-deploy --force
+
+      - name: Create and push version tag
+      - run: |
+          VERSION="v$(date +'%Y.%m.%d-%H%M')"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git tag $VERSION
+          git push origin $VERSION
