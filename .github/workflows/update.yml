@@ -26,14 +26,14 @@ jobs:
 
       - name: Run update script
         env:
-          USE_LOCAL: 'true'
-          CSV_URL: ${{ secrets.CSV_URL }}
+          USE_LOCAL: 'true' # change to false if not using local csv file
+          CSV_URL: ${{ secrets.CSV_URL }} # update this URL with Google Sheets if not using local csv
         run: python update_data_dictionary.py
 
       - name: Save latest CSV to docs folder
         run: |
           mkdir -p docs
-          cp data_dictionary.csv docs/latest_data_dictionary.csv
+          cp output/data_dictionary.csv docs/latest_data_dictionary.csv
 
       - name: Commit latest CSV
         run: |
@@ -46,10 +46,14 @@ jobs:
       - name: Deploy MkDocs site
         run: mkdocs gh-deploy --force
 
-      - name: Create and push version tag
+      - name: Create version tag and update README
         run: |
           VERSION="v$(date +'%Y.%m.%d-%H%M')"
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git tag $VERSION
           git push origin $VERSION
+          sed -i "s|{{VERSION}}|$VERSION|g" README.md
+          git add README.md
+          git commit -m "Update README with version $VERSION"
+          git push
