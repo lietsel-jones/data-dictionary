@@ -1,0 +1,13 @@
+site_name: Data Dictionary
+theme:
+  name: material
+  features:
+    - search.suggest
+    -s earch.highlight
+    - navigation.expand
+    - navigation.sections
+    - toc.integrate
+markdown_extensions:
+  - tables
+  - toc:
+    permalink: true
