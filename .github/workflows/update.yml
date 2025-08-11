@@ -33,7 +33,7 @@ jobs:
       - name: Save latest CSV to docs folder
         run: |
           mkdir -p docs
-          cp output/data_dictionary.csv docs/latest_data_dictionary.csv
+          cp data_dictionary.csv docs/latest_data_dictionary.csv
 
       - name: Commit latest CSV
         run: |
