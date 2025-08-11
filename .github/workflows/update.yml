@@ -27,14 +27,27 @@ jobs:
       - name: Run update script
         env:
           USE_LOCAL: 'true'
-          CSV_URL: ${{ secrets.CSV_URL }}  # add Google Sheet csv url as a repo secret
+          CSV_URL: ${{ secrets.CSV_URL }}
         run: python update_data_dictionary.py
+
+      - name: Save latest CSV to docs folder
+        run: |
+          mkdir -p docs
+          cp output/data_dictionary.csv docs/latest_data_dictionary.csv
+
+      - name: Commit latest CSV
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/latest_data_dictionary.csv
+          git commit -m "Update latest data dictionary CSV" || echo "No changes to commit"
+          git push
 
       - name: Deploy MkDocs site
         run: mkdocs gh-deploy --force
 
       - name: Create and push version tag
-      - run: |
+        run: |
           VERSION="v$(date +'%Y.%m.%d-%H%M')"
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
