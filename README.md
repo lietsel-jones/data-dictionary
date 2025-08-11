@@ -23,7 +23,7 @@ print(df.head())
 
 ## Versioning
 * Each update is tagged with a version number based on the date/time of the update.
-* Historical versions can be browsed in the Releases page,
+* Historical versions can be viewed by clicking on Tags in the Releases page in this repo.
 
 ## Documentation
 You can browse the data dictionary here: https://lietsel-jones.github.io/data-dictionary/
